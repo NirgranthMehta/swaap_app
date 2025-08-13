@@ -1,21 +1,20 @@
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
+android {
+    namespace = "com.example.app"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "com.example.app"
+        minSdk = 21
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
     }
-}
 
-val newBuildDir: Directory = rootProject.layout.buildDirectory.dir("../../build").get()
-rootProject.layout.buildDirectory.value(newBuildDir)
+    ndkVersion = "27.0.12077973"  // ✅ This is the added line
 
-subprojects {
-    val newSubprojectBuildDir: Directory = newBuildDir.dir(project.name)
-    project.layout.buildDirectory.value(newSubprojectBuildDir)
-}
-subprojects {
-    project.evaluationDependsOn(":app")
-}
-
-tasks.register<Delete>("clean") {
-    delete(rootProject.layout.buildDirectory)
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+        }
+    }
 }

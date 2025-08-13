@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:swaap/screen/splash_screen.dart';
 import 'package:swaap/utils/Theme/theme.dart';
 
 void main() {
@@ -12,9 +13,9 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       themeMode: ThemeMode.system,
-
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
+      home: const SplashScreen(),
     );
   }
 }

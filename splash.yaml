@@ -1,0 +1,18 @@
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#000000"
+  image: assets/logos/LigthThemeLogo.png
+  image_dark: assets/logos/DarkThemeLogo.png
+
+  android_12:
+    color: "#FFFFFF" #Light Background Color
+    color_dark: "#000000" #Dark Background Color
+    image: assets/logos/LigthThemeLogo.png
+    image_dark: assets/logos/DarkThemeLogo.png 
+
+
+  android: true
+
+  ios: true  
+  
+  web: false
