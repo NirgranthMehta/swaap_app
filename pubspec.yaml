@@ -1,49 +1,50 @@
 name: swaap
 description: "A new Flutter project."
 
-
-publish_to: 'none' 
-
-
-
+publish_to: 'none'
 
 version: 1.0.0+1
 
 environment:
   sdk: ^3.8.1
 
-
-
 #----------PACKAGES----------#
 dependencies:
   flutter:
     sdk: flutter
 
-    #Utility Packages
+  # Utility Packages
 
-  #Icons  
+  # Icons
   cupertino_icons: ^1.0.8
-
-
 
 #---------- ./PACKAGES END/. ----------#
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^5.0.0
-  
+  flutter_lints: ^6.0.0
   flutter_native_splash: ^2.4.6
 
-
-
-
+#----------DEPENDENCY OVERRIDES----------#
+dependency_overrides:
+  characters: ^1.4.1
+  material_color_utilities: ^0.13.0
+  meta: ^1.17.0
+  petitparser: ^7.0.0
+  vector_math: ^2.2.0
+  leak_tracker: ^11.0.1
+  leak_tracker_flutter_testing: ^3.0.10
+  leak_tracker_testing: ^3.0.2
+  test_api: ^0.7.7
+  vm_service: ^15.0.2
+  xml: ^6.6.0
 
 flutter:
   uses-material-design: true
 
   #----------LOCAL ASSETS----------#
-assets:
-  - assets/icons/
-  - assets/images/
-  - assets/logos/
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/logos/
