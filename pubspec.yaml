@@ -32,7 +32,7 @@ dependency_overrides:
   material_color_utilities: ^0.13.0
   meta: ^1.17.0
   petitparser: ^7.0.0
-  vector_math: ^2.2.0
+  vector_math: ^2.1.4
   leak_tracker: ^11.0.1
   leak_tracker_flutter_testing: ^3.0.10
   leak_tracker_testing: ^3.0.2
